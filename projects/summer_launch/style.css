@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-top: 30px;
+}
+
+.column img {
+  margin-top: 0;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Responsive layout - for medium size screens*/
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    font-family: arial;
+  }
+}
+
+/* Responsive layout - for small size screens */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.containerh1 {
+  position: absolute;
+  top: 0%;
+  left: 27%;
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 { /*probably make header*/
+  font-size: 8vw;
+  color: black;
+  font-family: 'Original Surfer', arial;
+  text-shadow: 2px 2px 5px white;
+
+}
+a { /*chang to nav*/
+    color: blue;
+    font-family: 'Original Surfer', arial;
+    padding: 8px;
+    text-shadow: 1px 1px black;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+footer { /*main content make body*/
+    font-family: Comic Sans MS;
+    text-align: justify;
+    text-indent: 60px;
+    margin: 13vw;
+
+    margin-top: 9px;
+
+}
+p {
+  color: black;
+  font-size: 23px;
+}
+body { /*group with new body element*/
+      background-image: url("paper.jpg");
+      text-align: center;
+
+}
+img {
+  width: 100%;
+  height: 165;
+}
