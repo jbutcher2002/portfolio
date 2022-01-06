@@ -543,14 +543,17 @@ div.highlightTextIn a:before
 } 
 
 /* reset */
-* { margin:0; padding:0; } p { margin:5px 0 10px 0; }
+* { 
+  margin: 0px 0px 0px 0px;
+  padding-left: 25px;   /*move menu left or right*/
+  font-size: 3vw;
+}
 /* reset*/
 body {
 	margin-top: -25px;
 }
-h1 {
-  font-size: 12vw;
-  margin-top: 0px;
+* {
+
   
 }
 
