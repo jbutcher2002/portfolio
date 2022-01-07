@@ -11,11 +11,12 @@
   text-overflow: hidden:
   box-sizing: border-box;
   line-spacing: 40px;
+  
 }
 
 video {  
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   top: 0;
@@ -30,6 +31,9 @@ nav {
   text-align: center;
   text-overflow: hidden;
   
+}
+a {
+  white-space: pre;
 }
 a:link {
   color: white;
@@ -83,12 +87,18 @@ nav.example {
 @media screen and (min-width: 601px) {
   nav.example {
     font-size: 4vw;
+	  float: center;
+	  padding: 2px;
+	  
   }
 }
 
 @media screen and (max-width: 700px) {
   nav.example {
     font-size: 6vh;
+	white-space: wrap; 
+    width: 100px; 
+    
   }
 }
 
