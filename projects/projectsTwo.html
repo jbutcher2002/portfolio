@@ -4,54 +4,140 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<header>
+
 <style>
-* {
-  text-overflow: hidden:
-  box-sizing: border-box;
-  line-spacing: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
+header {
+  width: auto;
+  height: 300px;
+  max-height: 28vh;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-position: center;
+  background-image: url("backBoat.jpg");
+  margin-bottom: 2.25rem !important;                      /* image margins*/
+  margin-top: -2vw;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  
+}
+body {
+
+  font-family: Libre Caslon Text;
+  background-image: url("paper.jpg");
+}
+.body-text {
+                      
+  padding-right: 8vw;           /* padding paragraph */
+  padding-left: 10vw;
+  padding-top: 0vh;
+  text-align: left;
+  position: relative;
+  margin-top: 0vh;
+}
+.hamburger-icon {
+  position: absolute;
+  z-index: 1;
+  top: 1.3vh;                           /* burger position */
+  left: 2vw;
+  padding-bottom: 2vh;
+}
+.hamburger-icon span {
+  height: 5px;
+  width: 40px;
+  background-color: navy;            /* burger color */
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;      /* burger time */
+  transform: none;
+  padding-right: -40px;
+}
+#openmenu:checked ~ .menu-pane {
+  top: 0px;
+  left: 5vw;                       /* menu pull out distance to right margin */
+  transform: translateX(-5vw);
+}
+#openmenu:checked ~ .body-text {
+display: none;
+}
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: white;
+}                                                                /* burger 1 & 2 */
+
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+
+div.menu-pane {
+  background-color: transparent;
+  position: absolute;
+  transform: translateX(-105vw);
+  transform-origin: (0, 10);
+  width: 100vw;
+  height: 100vh;
+  transition: 1.2s ease-in-out;          /* pull out menu speed */
+  
   
 }
 
-video {  
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-nav {
-  font-family: 'Poiret One', cursive;
-  margin-top: 17%;
-  font-size: 4vw;
-  text-decoration: none;
-  text-align: center;
-  text-overflow: hidden;
+.menu-pane p {
+  color: black;
+  font-size: 10vh;
   
 }
 
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+.menu-pane nav {
+  margin: -50px;
+  padding-left: 10vw;    /* menu links width padding */
 }
 
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+.menu-links li, a, span {
+      transition: 0.2s ease-in-out;   /* hover effect speed */
 }
 
-a:hover {
+.menu-pane ul {
+  padding: 1.8vw;              /* move list up */
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 50px;
+  padding-right: 40px;
+  
+}
+
+.menu-pane li {                /* move list up */
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-top: -800px;
+  padding-bottom: 7px;    /* padding between lists */
+  margin-left: -35px;
+  padding-right: 14px;
+  font-size: 8vh;
+}
+
+.menu-pane li:first-child {
+  font-size: vh;
+  margin-left: 10px;
+}
+
+.menu-links li a {               /* move links */
   color: white;
-  background-color: transparent;
-  text-overflow: clip;
   text-decoration: none;
-  font-size:50px;
-  font-weight: bold;
+  padding-top: -43vh;
+  
+  
+}
+
+.menu-links li:hover a {
   text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -66,58 +152,227 @@ a:hover {
                0 20px 20px rgba(72,72,72,50);
 }
 
+.menu-links li:first-child:hover a {     /* slide menu links hover */
+    
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(72,72,72,30),
+               0 0 5px rgba(72,72,72,30),
+               0 1px 3px rgba(72,72,72,30),
+               0 3px 5px rgba(72,72,72,40),
+               0 5px 10px rgba(72,72,72,50),
+               0 10px 10px rgba(72,72,72,50),
+               0 20px 20px rgba(72,72,72,50);
+}
 
+#QC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+  display: block;
+  opacity: 0;
+  
+  
+}
+.menu-links li:first-child:hover #QC-info {
+opacity: 1;
+}
 
+.menu-links li:first-child:hover #DC-info {
+opacity: 1;
+}
 
-a:active {
-  color: white;
-  background-color: transparent;
+#DC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+  display: block;
+  opacity: 0;
+}
+
+.menu-links li:first-child a {
+  padding: 20px;     /* HOME */
+}
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: -10vh;
+  left: 50vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
+p {                                                       /*   P   */
+  font-size: 2.8vw;
+  text-indent: 75px;
+  
+  position: justify;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+video {  
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  flex-wrap: wrap;
+}
+
+@font-face {
+   font-family: PoiretOne-Regular;
+   src: url(PoiretOne-Regular.ttf);
+   
+}
+.top-nav {
+  padding-top: 50vh;
   text-decoration: none;
   
+}
   
 
-}
-nav.example {
+
+.top-nav, div {
+  text-align: center;
+  font-family: PoiretOne-Regular;
+  flex-wrap: wrap;
   
-  padding: 20px;
 }
-
-@media screen and (min-width: 601px) {
-  nav.example {
-    font-size: 3.9vw;
-	  float: center;
-	  padding: 2px;
-	  
-  }
+#menu-links-top {
+  padding-top: 10px;
+  padding-bottom: 12vh;
+  margin-bottom:15px;            /* margin between menu & paragraph */
+  
+  
+.menu-links {
+  padding-top: 28vh;
+  margin-top: 50px;
 }
-
-@media screen and (max-width: 700px) {
-  nav.example {
-    font-size: 6vh;
-	white-space: wrap; 
-    width: 100px; 
-    
-  }
 }
+a {
+  text-decoration: none;
+  color: navy;
+}
+a:hover {                           /* main links hover */
+  text-shadow: 3px 2px 2px #474747;
+  color: navy;
+  
+}
+a:visited {
+  
+  color: white;
 
+#main {
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(72,72,72,30),
+               0 0 5px rgba(72,72,72,30),
+               0 1px 3px rgba(72,72,72,30),
+               0 3px 5px rgba(72,72,72,40),
+               0 5px 10px rgba(72,72,72,50),
+               0 10px 10px rgba(72,72,72,50),
+               0 20px 20px rgba(72,72,72,50);
+}
+dot {
+  color: navy;
+}
 </style>
-</head>
-<body>
 
-<video autoplay muted loop id="myVideo">
-  <source src="globe.mp4" type="video/mp4">
+<div class="menu-container">
+  
+  <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+  
+  <div class="hamburger-icon">
+    <label for="openmenu" id="hamburger-label">
+	  <span></span>
+      <span></span>
+      
+    </label>    
+  </div>
+    <video autoplay muted loop id="myVideo">
+  <source src="Waves - 71122.mp4" type="video/mp4">
 </video>
-
-<div class="content">
-  <nav class="example">
-    <a href="../index.html">  HOME</a>
-    <a href="summer_launch/home.html">SUMMER LAUNCH</a>
-    <a href="technical_docs/technical-docs.html">TECHNICAL DOCS<br></a>
-    <a href="https://github.com/jbutcher2002/Jeff_Invaders">JEFF INVADERS</a>
-  </nav>
+<div>
 </div>
 
+    <div class="menu-pane"><video autoplay muted loop id="myVideo">
+  <source src="globe.mp4" type="video/mp4">
+</video>
+      
+      <nav>
+        <ul class="menu-links">
+		  <br><br><br><br>
+          <li><a id="main" style="font-weight: bold;"href="../index.html">HOME</a><span id="QC-info">
+          </li>
+          
+          
+           
+          </li>
+          <li><a href="technical_docs/technical-docs.html">RESUME</a></li>
+		  <li><a href="https://github.com/jbutcher2002">GITHUB</a></li>
+          <li><a href="https://github.com/jbutcher2002">ABOUT</a></li>
+		  <li><a href="mailto:email@jbutcher_2002@yahoo.com">CONTACT</a></li>
+        </ul>
+         <ul class="menu-links">
+                     <li><a id="main" style="font-weight: bold;"href="projects/projectsTwo.html">PROJECTS</a>
+                       
+          </span></li>
 
-
-</body>
+          <li><a href="summer_launch/home.html">SUMMER LAUNCH</a></li>
+          <li><a href="technical_docs/technical-docs.html">
+            TECHNICAL DOCS            
+            </a></li>
+          <li><a href="https://github.com/jbutcher2002/Jeff_Invaders">JEFF INVADERS</a></li>
+        </ul>
+        
+        
+      </nav>
+    </div>
+  <div class="body-text">
+    <div style="font-size: 2.1rem;font-family: original surfer;word-spacing: 7px;text-shadow: 2px 2px 5px white;" class="menu-links" id="menu-links-top">
+    
+    <a href="home.html" class="visited">HOME</a>
+	
+    <a href="beach.html">BEACH</a>
+    <a href="boat.html">BOAT</a>
+    <a href="bike.html">BIKE</a>
+    <a href="crabs.html">CRABS</a>
+    
+    
+  </div>
+    <br><p>Last year, after the pandemic hit. I decided to buy a pontoon boat.
+        I made this site to show some of the things I did over the summer. There are links above to some
+        of the pics I took during the the past year. I moved here about two years
+        ago, and live about 10 minutes from the bay, and 20 minutes from the beach. I go fishing a good bit. On the
+        bay, I fish for flounder and blue's. On the beach, I fish for striper's and rockfish.
+         That brings us to the crabs. The season starts around the end of June until the middle
+        of October. Unfortunatly that means right now. I usualy catch about two or
+        three bushells every week. I have to give alot to the neighbors, because there's so many.</p><p>
+        When I'm not on the boat fishing or crabbing, I'll go out and ride my e-bike. There are around 500
+        trails around here, so there  might be alot of pics. I was never real interested in bikes before, but
+        once I rode an e-bike. I had to get one of them. I go about 30 miles on a charge, so it lasts prety much
+        all day. It's half bicycle, half motorcycle, and does about 23mph. When you go on the smaller trails,
+        it can get a little
+        scetchy. You can only do about 5mph, but I've only layed it down  about 2 or 3 times. Don't wory I'm
+        OK.</p>
+                <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and
+        the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the
+        level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed
+        to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking
+        down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.<br><br><br>
+        </p>
+  </div>
+</div>
 </html>
