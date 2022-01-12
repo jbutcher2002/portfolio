@@ -9,37 +9,68 @@
 <link href="https://raw.githubusercontent.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">  <!-- Put raw. before github link to rel style sheet ( not mine) -->
 <!-- ------------- This github repository ------------------------------------------------------- -->
    
-<nav id="navbar">
-  <h1 style="background-image: url("https://clipartbarn.com/wp-content/uploads/2016/11/Wood-background-clipart.jpg";font-size: 3vw; font-style: italic; margin: 0px;"><a class="nav-link" href="#main-doc" style="margin-top: 20px;margin-bottom: 0px;white-space: pre;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;color: black; line-height: 1.875rem;font-size: 1.563rem; !important">     TECHNICAL    <h1 style="font-size: 1.563rem;">DOCUMENTATION</h1></a></h1>
-  <ul>
-    <li><a style="font-size: 28px;" class="nav-link" href="../projectsTwo.html">PROJECTS</a></li>
-    <li><a class="nav-link" href="#know-your-nailer">KNOW YOUR NAILER</a></li>
-    <li>
-      <a class="nav-link" href="#What_you_should_already_know"
-        >PRODOCT SPECIFACATIONS</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#product-overveiw">PRODUCT OVERVEIW</a>
-    </li>
-    <li><a class="nav-link" href="#clean-drive-system">CLEAN DRIVE SYSTEM</a></li>
-    <li><a class="nav-link" href="#jam-clearance">JAM CLEARANCE</a></li>
-    <li>
-      <a class="nav-link" href="#magazine">MAGAZINE</a>
-    </li>
-    <li><a class="nav-link" href="#depth-adjustment">DEPTH ADJUSTMENT</a></li>
-    <li><a class="nav-link" href="#narrow-nose-design">NARROW NOSE DESIGN</a></li>
-    <li><a class="nav-link" href="#ergonomics">ERGONOMICS</a></li>
-    <li><a class="nav-link" href="#performance">PERFORMANCE</a></li>  
-    <!--<li><a class="nav-link" href="#Reference">Reference</a></li>-->
-  </ul>
-</nav>
+
 <style>
-h1 {
-  background-image: url("https://github.com/jbutcher2002/dev-landing-page/blob/master/Ridgid-15-Ga-Nailer-Article02-800x600.jpg?raw=true");
-  color: black;                <!-- Host custom cropped images from github repository (Remember ?raw=true) -->
-  
-  
-  
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-top: 30px;
+}
+
+.column img {
+  margin-top: 0;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Responsive layout - for medium size screens*/
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    font-family: arial;
+  }
+}
+
+/* Responsive layout - for small size screens */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.containerh1 {
+  position: absolute;
+  top: 0%;
+  left: 27%;
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 h3 {
   font-family: impact;
@@ -48,7 +79,10 @@ h3 {
   
 }
 * {font-weight: bold;}
-html {background-image: url("https://github.com/jbutcher2002/dev-landing-page/blob/master/paper.jpg?raw=true");position: relative;}
+html { 
+  
+  
+}
 html,
 body {
   
@@ -106,7 +140,7 @@ header {
 }
 
 #main-doc header {
-  text-align: left;
+  text-align: center;
   margin: 0px;
   
   text-color: white;
@@ -119,6 +153,7 @@ header {
   overflow-x: hidden;
   font-size: 1.125rem;
   color: black;
+  font-size: 2.2vw;
 }
 
 #navbar li {
@@ -131,24 +166,14 @@ header {
   text-color: white;
 }
 
-#navbar a {
-  display: block;
-  padding: 1px 30px;
 
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.188rem;
-  text-shadow: -2px -2px 5px orange;
-  color: black;
-  font-weight: bold;
-  
-}
 
 #main-doc {
   position: absolute;
-  margin-left: 310px;
+  margin-left: 0px;
   padding: 20px;
   margin-bottom: 110px;
+  
   
   
 }
@@ -169,45 +194,13 @@ section li {
 }
 
 
-
-@media only screen and (max-width: 815px) {
-  /* For small screens */
-  #navbar ul {
-    border: 1px solid;
-    height: 207px;
-  }
-
-  #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
-	
-	text-color: white;
-  }
-
-  #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-  }
-
-  
-}
-p {
+* {
   font-weight: bold;
+  font-size: 2.3vw;
+}
+
+p {
+  font-size: 3vw;
   color: black;
   
   font-family: 'rawline', sans-serif; /* Set costom font */
@@ -219,7 +212,8 @@ header {
   text-decoration: underline;
   font-weight: bold;
   color: black;
-
+  
+  
 
   
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px orange;
@@ -250,15 +244,26 @@ h1 {
   grid-template-columns: 300px 300px;
 }
 .wrapperTwo {grid-template-columns: 200px 200px 200px;}
+ul {
+  font-size: 1vw:
+}
+html {
+  background: url(diamond_plate.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
 </style>
 
 <main id="main-doc">
     <img src="https://github.com/jbutcher2002/dev-landing-page/blob/master/ridgid-logo-vector_transparent.png?raw=true" style="width: 70%; margin-left: 155px; margin-bottom: -60px;">
-    <h2 id="home"><strong><span style="font-size: 2vw;text-shadow: none;"></span></strong></h2>
+    <h2 id="home"><strong><span style="font-size: 5vw;text-shadow: none;"></span></strong></h2>
     <header style="text-align: center;">15 Guage 2-1/2'' Angled Finish Nailer</header>
     <article>
 	  
-      <p style=" text-indent: 35px;">
+      <p style=" text-indent: 35px;font-size: 3vw;">
         RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer, delivering consistent and professional results with every trigger-pull. Packed with Clean Drive Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic tools, this is sure to be a staple in contractors toolboxes.
 	  
       </p>
