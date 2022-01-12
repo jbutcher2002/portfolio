@@ -7,28 +7,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About</title>
 
+
+
 <style>
 * {
-  background-color: navy;
+  box-sizing: border-box;
 }
-header {
-  background-color: navy;
+
+body {
+  
 }
-  video {  
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 0%; 
+  min-height: 0%;
+}
+
+.content {
+  position: fixed;
+  
+  
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+}
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
   width: 100%;
-  height: 80%;
-  object-fit: fixed;
-  margin-top: 80px;
+  height: 100%;
   position: absolute;
+  background-image: url("paper.jpg");
+  padding: 0px;
   
-  top: 0;
-  left: 0;
   
-  flex-wrap: wrap;
+  
 }
+
+
+
+
 </style>
-<header><video autoplay muted loop id="myVideo">
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
   <source src="about.mp4" type="video/mp4">
-</video></header>
-  <body></body>
-    
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+
+
+</body>
+</html>
