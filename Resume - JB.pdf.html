@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///C:/Users/jbark/Downloads/Resume%20-%20JB.pdf -->
+<html dir="ltr" mozdisallowselectionprint=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <title>Resume - JB.pdf</title>
+
+<!-- This snippet is used in the Chromium extension (included from viewer.html) -->
+<!--<base href="/content/web/">--><base href=".">
+<link rel="resource" type="application/l10n" href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/content/web/locale/locale.properties">
+<script src="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/content/build/pdf.js"></script>
+
+
+    <link rel="stylesheet" href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/content/web/viewer.css">
+
+
+
+    <script src="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/content/web/viewer.js"></script>
+
+  </head>
+
+  <body tabindex="1" class="">
+    <div id="outerContainer">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div class="splitToolbarButton toggled">
+            <button id="viewThumbnail" class="toolbarButton toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
+               <span data-l10n-id="thumbs_label">Thumbnails</span>
+            </button>
+            <button id="viewOutline" class="toolbarButton" title="Show Document Outline (double-click to expand/collapse all items)" tabindex="3" data-l10n-id="document_outline" disabled="">
+               <span data-l10n-id="document_outline_label">Document Outline</span>
+            </button>
+            <button id="viewAttachments" class="toolbarButton" title="Show Attachments" tabindex="4" data-l10n-id="attachments" disabled="">
+               <span data-l10n-id="attachments_label">Attachments</span>
+            </button>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView"><a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///C:/Users/jbark/Downloads/Resume%20-%20JB.pdf#page=1" title="Page 1"><div class="thumbnail selected" data-page-number="1"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a><a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///C:/Users/jbark/Downloads/Resume%20-%20JB.pdf#page=2" title="Page 2"><div class="thumbnail" data-page-number="2"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a></div>
+          <div id="outlineView" class="hidden"></div>
+          <div id="attachmentsView" class="hidden"></div>
+        </div>
+        <div id="sidebarResizer" class=""></div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div class="findbar hidden doorHanger" id="findbar">
+          <div id="findbarInputContainer">
+            <input id="findInput" class="toolbarField" title="Find" placeholder="Find in document…" tabindex="91" data-l10n-id="find_input">
+            <div class="splitToolbarButton">
+              <button id="findPrevious" class="toolbarButton findPrevious" title="Find the previous occurrence of the phrase" tabindex="92" data-l10n-id="find_previous">
+                <span data-l10n-id="find_previous_label">Previous</span>
+              </button>
+              <div class="splitToolbarButtonSeparator"></div>
+              <button id="findNext" class="toolbarButton findNext" title="Find the next occurrence of the phrase" tabindex="93" data-l10n-id="find_next">
+                <span data-l10n-id="find_next_label">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="findbarOptionsOneContainer">
+            <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
+            <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">Highlight all</label>
+            <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
+            <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Match case</label>
+          </div>
+          <div id="findbarOptionsTwoContainer">
+            <input type="checkbox" id="findEntireWord" class="toolbarField" tabindex="96">
+            <label for="findEntireWord" class="toolbarLabel" data-l10n-id="find_entire_word_label">Whole words</label>
+            <span id="findResultsCount" class="toolbarLabel hidden"></span>
+          </div>
+
+          <div id="findbarMessageContainer">
+            <span id="findMsg" class="toolbarLabel"></span>
+          </div>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
+          <div id="secondaryToolbarButtonContainer">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Presentation Mode" tabindex="51" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" tabindex="52" data-l10n-id="open_file" hidden="true">
+              <span data-l10n-id="open_file_label">Open</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Print" tabindex="53" data-l10n-id="print">
+              <span data-l10n-id="print_label">Print</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" tabindex="54" data-l10n-id="download">
+              <span data-l10n-id="download_label">Download</span>
+            </button>
+
+            <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///C:/Users/jbark/Downloads/Resume%20-%20JB.pdf#page=1&amp;zoom=auto,-17,292" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="Current view (copy or open in new window)" tabindex="55" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">Current View</span>
+            </a>
+
+            <div class="horizontalToolbarSeparator visibleLargeView"></div>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="Go to First Page" tabindex="56" data-l10n-id="first_page" disabled="">
+              <span data-l10n-id="first_page_label">Go to First Page</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="Go to Last Page" tabindex="57" data-l10n-id="last_page">
+              <span data-l10n-id="last_page_label">Go to Last Page</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="Rotate Clockwise" tabindex="58" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">Rotate Clockwise</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="Rotate Counterclockwise" tabindex="59" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="cursorSelectTool" class="secondaryToolbarButton selectTool toggled" title="Enable Text Selection Tool" tabindex="60" data-l10n-id="cursor_text_select_tool">
+              <span data-l10n-id="cursor_text_select_tool_label">Text Selection Tool</span>
+            </button>
+            <button id="cursorHandTool" class="secondaryToolbarButton handTool" title="Enable Hand Tool" tabindex="61" data-l10n-id="cursor_hand_tool">
+              <span data-l10n-id="cursor_hand_tool_label">Hand Tool</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="scrollVertical" class="secondaryToolbarButton scrollModeButtons scrollVertical toggled" title="Use Vertical Scrolling" tabindex="62" data-l10n-id="scroll_vertical">
+              <span data-l10n-id="scroll_vertical_label">Vertical Scrolling</span>
+            </button>
+            <button id="scrollHorizontal" class="secondaryToolbarButton scrollModeButtons scrollHorizontal" title="Use Horizontal Scrolling" tabindex="63" data-l10n-id="scroll_horizontal">
+              <span data-l10n-id="scroll_horizontal_label">Horizontal Scrolling</span>
+            </button>
+            <button id="scrollWrapped" class="secondaryToolbarButton scrollModeButtons scrollWrapped" title="Use Wrapped Scrolling" tabindex="64" data-l10n-id="scroll_wrapped">
+              <span data-l10n-id="scroll_wrapped_label">Wrapped Scrolling</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator scrollModeButtons"></div>
+
+            <button id="spreadNone" class="secondaryToolbarButton spreadModeButtons spreadNone toggled" title="Do not join page spreads" tabindex="65" data-l10n-id="spread_none">
+              <span data-l10n-id="spread_none_label">No Spreads</span>
+            </button>
+            <button id="spreadOdd" class="secondaryToolbarButton spreadModeButtons spreadOdd" title="Join page spreads starting with odd-numbered pages" tabindex="66" data-l10n-id="spread_odd">
+              <span data-l10n-id="spread_odd_label">Odd Spreads</span>
+            </button>
+            <button id="spreadEven" class="secondaryToolbarButton spreadModeButtons spreadEven" title="Join page spreads starting with even-numbered pages" tabindex="67" data-l10n-id="spread_even">
+              <span data-l10n-id="spread_even_label">Even Spreads</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator spreadModeButtons"></div>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="68" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Document Properties…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton" title="Toggle Sidebar" tabindex="11" data-l10n-id="toggle_sidebar">
+                  <span data-l10n-id="toggle_sidebar_label">Toggle Sidebar</span>
+                </button>
+                <div class="toolbarButtonSpacer"></div>
+                <button id="viewFind" class="toolbarButton" title="Find in Document" tabindex="12" data-l10n-id="findbar">
+                  <span data-l10n-id="findbar_label">Find</span>
+                </button>
+                <div class="splitToolbarButton hiddenSmallView">
+                  <button class="toolbarButton pageUp" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous" disabled="">
+                    <span data-l10n-id="previous_label">Previous</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button class="toolbarButton pageDown" title="Next Page" id="next" tabindex="14" data-l10n-id="next">
+                    <span data-l10n-id="next_label">Next</span>
+                  </button>
+                </div>
+                <input type="number" id="pageNumber" class="toolbarField pageNumber" title="Page" value="1" size="4" min="1" tabindex="15" data-l10n-id="page" max="2">
+                <span id="numPages" class="toolbarLabel">of 2</span>
+              </div>
+              <div id="toolbarViewerRight">
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="32" data-l10n-id="open_file" hidden="true">
+                  <span data-l10n-id="open_file_label">Open</span>
+                </button>
+
+                <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="33" data-l10n-id="print">
+                  <span data-l10n-id="print_label">Print</span>
+                </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView" title="Download" tabindex="34" data-l10n-id="download">
+                  <span data-l10n-id="download_label">Download</span>
+                </button>
+                <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///C:/Users/jbark/Downloads/Resume%20-%20JB.pdf#page=1&amp;zoom=auto,-17,292" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView" title="Current view (copy or open in new window)" tabindex="35" data-l10n-id="bookmark">
+                  <span data-l10n-id="bookmark_label">Current View</span>
+                </a>
+
+                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">
+                  <span data-l10n-id="tools_label">Tools</span>
+                </button>
+              </div>
+              <div id="toolbarViewerMiddle">
+                <div class="splitToolbarButton">
+                  <button id="zoomOut" class="toolbarButton zoomOut" title="Zoom Out" tabindex="21" data-l10n-id="zoom_out">
+                    <span data-l10n-id="zoom_out_label">Zoom Out</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button id="zoomIn" class="toolbarButton zoomIn" title="Zoom In" tabindex="22" data-l10n-id="zoom_in">
+                    <span data-l10n-id="zoom_in_label">Zoom In</span>
+                   </button>
+                </div>
+                <span id="scaleSelectContainer" class="dropdownToolbarButton" style="min-width: 122px; max-width: 122px;">
+                  <select id="scaleSelect" title="Zoom" tabindex="23" data-l10n-id="zoom" style="min-width: 144px;">
+                    <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">Automatic Zoom</option>
+                    <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">Actual Size</option>
+                    <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Page Fit</option>
+                    <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Page Width</option>
+                    <option id="customScaleOption" title="" value="custom" disabled="disabled" hidden="true"></option>
+                    <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                    <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                    <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                    <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                    <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                    <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                    <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                    <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div id="loadingBar" class="hidden" style="width: calc(100% - 17px);">
+              <div class="progress" style="height: 100%; width: 100%;">
+                <div class="glimmer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <menu type="context" id="viewerContextMenu">
+          <menuitem id="contextFirstPage" label="First Page" data-l10n-id="first_page" title="Go to First Page"></menuitem>
+          <menuitem id="contextLastPage" label="Last Page" data-l10n-id="last_page" title="Go to Last Page"></menuitem>
+          <menuitem id="contextPageRotateCw" label="Rotate Clockwise" data-l10n-id="page_rotate_cw" title="Rotate Clockwise"></menuitem>
+          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise" data-l10n-id="page_rotate_ccw" title="Rotate Counterclockwise"></menuitem>
+        </menu>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer" class="pdfViewer"><div class="page" data-page-number="1" style="width: 1019px; height: 1319px;" data-loaded="true"><div class="canvasWrapper" style="width: 1019px; height: 1319px;"><canvas id="page1" width="1275" height="1650" style="width: 1020px; height: 1320px;"></canvas></div><div class="textLayer" style="width: 1019px; height: 1319px;"><span style="left: 552.283px; top: 31.702px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.848334);">34018 </span><span style="left: 587.917px; top: 31.702px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.757025);">Inlet Breeze D</span><span style="left: 661.917px; top: 31.702px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.50014);">r.</span><span style="left: 552.283px; top: 45.102px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.965335);">Lewes</span><span style="left: 585.917px; top: 45.102px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.804849);">, DE. 19958</span><span style="left: 764.517px; top: 31.702px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.875257);">Phone 443.545</span><span style="left: 843.767px; top: 31.702px; font-size: 11.6px; font-family: sans-serif;">.</span><span style="left: 847.167px; top: 31.702px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.928334);">4992</span><span style="left: 732.317px; top: 58.502px; font-size: 11.6px; font-family: sans-serif;">e</span><span style="left: 738.717px; top: 58.502px; font-size: 11.6px; font-family: sans-serif;">-</span><span style="left: 742.517px; top: 58.502px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.66639);">mail: </span><span style="left: 770.317px; top: 58.502px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(0.867584);">jbutcher_2002@yahoo.</span><span style="left: 891.367px; top: 58.502px; font-size: 11.6px; font-family: sans-serif; transform: scaleX(1.04722);">com</span><span style="left: 125.04px; top: 90.907px; font-size: 45px; font-family: sans-serif; transform: scaleX(0.847167);">J. Butcher</span><span style="left: 125.04px; top: 217.164px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.895186);">Objective</span><span style="left: 305.033px; top: 219.41px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.712316);">Installation of commercial &amp; residential carpet, ceramic tile, VCT, lami</span><span style="left: 816.367px; top: 219.41px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.716905);">nates, </span><span style="left: 305.033px; top: 238.61px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.756814);">Pergo, hardwood and vinyl flooring</span><span style="left: 561.483px; top: 238.61px; font-size: 16.6px; font-family: sans-serif;">.</span><span style="left: 125.04px; top: 293.764px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.901945);">Quick </span><span style="left: 178.233px; top: 293.764px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.96889);">Reference</span><span style="left: 306.233px; top: 298.103px; font-size: 13.4px; font-family: sans-serif;">►</span><span style="left: 323.233px; top: 295.21px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.800477);">Twenty </span><span style="left: 378.683px; top: 295.21px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.727334);">three</span><span style="left: 418.683px; top: 295.206px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.732452);">years’ experience</span><span style="left: 306.233px; top: 322.303px; font-size: 13.4px; font-family: sans-serif;">►</span><span style="left: 326.633px; top: 319.41px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.778561);">Team leader experience</span><span style="left: 601.717px; top: 298.103px; font-size: 13.4px; font-family: sans-serif;">►</span><span style="left: 618.717px; top: 295.21px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.68242);">Insurance: $300,000 (Liability)</span><span style="left: 601.717px; top: 322.303px; font-size: 13.4px; font-family: sans-serif;">►</span><span style="left: 617.917px; top: 319.41px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.756475);">Most recent wage: $25/hour</span><span style="left: 125.04px; top: 361.414px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.996945);">Work E</span><span style="left: 183.833px; top: 361.414px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.937779);">xperience</span><span style="left: 125.04px; top: 714.247px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.910953);">Apprenticeship</span><span style="left: 305.033px; top: 363.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.835001);">2006 </span><span style="left: 346.683px; top: 363.66px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 356.883px; top: 363.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.823096);">Present</span><span style="left: 485.083px; top: 363.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.794272);">Feng Shui Floors</span><span style="left: 763.517px; top: 363.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.816834);">Laurel, MD</span><span style="left: 305.033px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.742001);">Installer </span><span style="left: 378.283px; top: 385.614px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 387.883px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.747223);">All</span><span style="left: 414.083px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.850105);">Floor Coverings </span><span style="left: 548.883px; top: 385.614px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 561.283px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.901112);">Sol</span><span style="left: 587.517px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.881001);">e Pro</span><span style="left: 630.517px; top: 385.614px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.80262);">prietor</span><span style="left: 305.033px; top: 414.761px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 325.433px; top: 414.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.610257);">Installation </span><span style="left: 409.283px; top: 414.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.658556);">&amp;  restoration </span><span style="left: 512.283px; top: 414.66px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.628023);">of  all  types  of  floors  in  predominantly  residential </span><span style="left: 325.433px; top: 433.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.740626);">upscale </span><span style="left: 384.083px; top: 433.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.68091);">properties.</span><span style="left: 305.033px; top: 457.961px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 325.433px; top: 457.86px; font-size: 16.6px; font-family: sans-serif;">C</span><span style="left: 337.033px; top: 457.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.71394);">oordination</span><span style="left: 419.083px; top: 457.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.906945);">&amp; management</span><span style="left: 531.483px; top: 457.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.644828);">of up to three </span><span style="left: 627.917px; top: 457.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.862223);">employees</span><span style="left: 704.917px; top: 457.86px; font-size: 16.6px; font-family: sans-serif;">.</span><span style="left: 305.033px; top: 482.06px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.577028);">2009                                 Peacemaker Floors                      Gaithersburg, MD</span><span style="left: 305.033px; top: 505.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.925001);">Servic</span><span style="left: 359.883px; top: 505.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.972408);">e Tech (NV Homes) </span><span style="left: 533.883px; top: 505.814px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 547.083px; top: 505.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.949428);">Hardwood &amp; Custom stair runners </span><span style="left: 305.033px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.923689);">2004</span><span style="left: 346.683px; top: 549.86px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 356.883px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.929584);">2006</span><span style="left: 485.083px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.78881);">Harford Carpet</span><span style="left: 599.917px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.709546);">Sales, Inc.</span><span style="left: 731.117px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.986668);">Edgewood</span><span style="left: 809.767px; top: 549.86px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.883334);">, MD</span><span style="left: 305.033px; top: 571.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.742001);">Installer </span><span style="left: 378.283px; top: 571.814px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 390.683px; top: 571.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.922362);">Hardwood &amp; Ceramic Tile </span><span style="left: 610.517px; top: 571.814px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 620.117px; top: 571.814px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.907501);">Sub Contractor</span><span style="left: 305.033px; top: 615.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.835001);">2003 </span><span style="left: 346.683px; top: 615.894px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 356.883px; top: 615.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.929584);">2004</span><span style="left: 485.083px; top: 615.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.817084);">Fleming &amp; Sheely</span><span style="left: 739.517px; top: 615.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.782964);">Baltimore</span><span style="left: 809.767px; top: 615.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.883334);">, MD</span><span style="left: 305.033px; top: 637.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.742001);">Installer </span><span style="left: 378.283px; top: 637.847px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 390.683px; top: 637.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(1.01648);">Hardwood </span><span style="left: 481.083px; top: 637.847px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 490.683px; top: 637.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.908929);">Sub Contractor</span><span style="left: 305.033px; top: 681.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.835001);">2000 </span><span style="left: 346.683px; top: 681.894px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 356.883px; top: 681.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.930556);">200</span><span style="left: 384.683px; top: 681.894px; font-size: 16.6px; font-family: sans-serif;">3</span><span style="left: 485.083px; top: 681.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.908001);">JK Co</span><span style="left: 530.283px; top: 681.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.74389);">nsultants</span><span style="left: 763.517px; top: 681.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.816834);">Laurel, MD</span><span style="left: 305.033px; top: 703.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.742001);">Installer </span><span style="left: 378.283px; top: 703.847px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 390.483px; top: 703.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.882382);">Carpet </span><span style="left: 451.283px; top: 703.847px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 460.883px; top: 703.847px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.908929);">Sub Contractor</span><span style="left: 305.033px; top: 766.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.835001);">1997 </span><span style="left: 346.683px; top: 766.894px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 356.883px; top: 766.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.929584);">2000</span><span style="left: 485.083px; top: 766.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.874445);">Shaw Carpets</span><span style="left: 739.517px; top: 766.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.881529);">Columbia, MD</span><span style="left: 305.033px; top: 789.047px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.884395);">Apprentice </span><span style="left: 401.283px; top: 789.047px; font-size: 16.6px; font-family: sans-serif;">–</span><span style="left: 413.683px; top: 789.047px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.730436);">All</span><span style="left: 440.283px; top: 789.047px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.848855);">Floor Coverings </span><span style="left: 574.883px; top: 789.047px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 584.517px; top: 789.047px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(1.03979);">Employee</span><span style="left: 305.033px; top: 817.994px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 325.433px; top: 817.894px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.697584);">Four  year  apprenticeship  under  master  tradesman  with  Shaw  Carpets  (now </span><span style="left: 325.433px; top: 837.144px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.763334);">CB Flooring</span><span style="left: 408.683px; top: 837.144px; font-size: 16.6px; font-family: sans-serif;">)</span><span style="left: 125.04px; top: 879.097px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.946667);">Education</span><span style="left: 305.033px; top: 881.344px; font-size: 16.6px; font-family: sans-serif;">2</span><span style="left: 314.233px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.923689);">006</span><span style="left: 341.833px; top: 881.344px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 347.683px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.928751);">2007</span><span style="left: 485.083px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(1.065);">Howa</span><span style="left: 527.483px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.983334);">rd Comm</span><span style="left: 596.117px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.743975);">unity College</span><span style="left: 739.517px; top: 881.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.881529);">Columbia, MD</span><span style="left: 305.033px; top: 903.497px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.88189);">Student Auditor</span><span style="left: 305.033px; top: 932.444px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 325.433px; top: 932.344px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.738263);">Recreational coursework in Network Engineering.</span><span style="left: 305.033px; top: 971.544px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.835001);">1994 </span><span style="left: 346.683px; top: 971.544px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 352.283px; top: 971.544px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.928751);">1996</span><span style="left: 485.083px; top: 971.544px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.755633);">Northeast Mississippi College</span><span style="left: 733.917px; top: 971.544px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.795834);">Booneville, MS</span><span style="left: 305.033px; top: 993.497px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(1.03854);">Computer</span><span style="left: 387.083px; top: 993.497px; font-size: 16.6px; font-family: sans-serif;">-</span><span style="left: 391.883px; top: 993.497px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.909167);">Aided Design (CAD)</span><span style="left: 305.033px; top: 1022.64px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 325.433px; top: 1022.54px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.723919);">Coursework emphasis on drafting &amp; design, architecture and graphic design.</span><span style="left: 125.04px; top: 1064.53px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.963001);">References</span><span style="left: 305.033px; top: 1066.78px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.881334);">Ben Penrod</span><span style="left: 485.083px; top: 1066.78px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.801364);">CB Flooring</span><span style="left: 743.117px; top: 1066.78px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.851251);">443.864.7389</span><span style="left: 305.033px; top: 1089.28px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 333.833px; top: 1089.18px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.696462);">Installation partner with Fleming &amp; Sheely and Harford Carpet Sales, Inc.</span><span style="left: 305.033px; top: 1133.38px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.710139);">Jeff Knisley</span><span style="left: 485.083px; top: 1133.38px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.802263);">JK Consultants</span><span style="left: 743.117px; top: 1133.38px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.810834);">301.953.</span><span style="left: 807.967px; top: 1133.38px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.928751);">1000</span><span style="left: 305.033px; top: 1155.88px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 335.033px; top: 1155.78px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.851061);">Former boss</span><span style="left: 433.083px; top: 1155.78px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.748334);">as a sub contractor</span><span style="left: 574.883px; top: 1155.78px; font-size: 16.6px; font-family: sans-serif;">.</span><span style="left: 305.033px; top: 1194.98px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.751167);">Rick Scott</span><span style="left: 485.083px; top: 1194.98px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.792273);">Floor Medic</span><span style="left: 743.117px; top: 1194.98px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.851251);">443.745.5872</span><span style="left: 305.033px; top: 1217.68px; font-size: 16.6px; font-family: sans-serif;">▪</span><span style="left: 335.033px; top: 1217.58px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.851061);">Former boss</span><span style="left: 433.083px; top: 1217.58px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.771191);">as a su</span><span style="left: 486.883px; top: 1217.58px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.692022);">b </span><span style="left: 500.683px; top: 1217.58px; font-size: 16.6px; font-family: sans-serif; transform: scaleX(0.743834);">contractor</span><span style="left: 574.883px; top: 1217.58px; font-size: 16.6px; font-family: sans-serif;">.</span><div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="9R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -460.05px -34.8px; left: 460.05px; top: 34.8px; width: 90.21px; height: 8.05px;"><a title="mailto:jbutcher_2002@yahoo.com" href="mailto:jbutcher_2002@yahoo.com" target="" rel="noopener noreferrer nofollow"></a></section></div></div><div class="page" data-page-number="2" style="width: 1019px; height: 1319px;" data-loaded="true"><div class="canvasWrapper" style="width: 1019px; height: 1319px;"><canvas id="page2" width="1275" height="1650" style="width: 1020px; height: 1320px;"></canvas></div><div class="textLayer" style="width: 1019px; height: 1319px;"><div class="endOfContent"></div></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <span id="errorMessage"></span>
+            <button id="errorShowMore" data-l10n-id="error_more_info">More Information</button>
+            <button id="errorShowLess" data-l10n-id="error_less_info" hidden="true">Less Information</button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" data-l10n-id="error_close">Close</button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">Enter the password to open this PDF file.</p>
+            </div>
+            <div class="row">
+              <input type="password" id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordCancel" class="overlayButton"><span data-l10n-id="password_cancel">Cancel</span></button>
+              <button id="passwordSubmit" class="overlayButton"><span data-l10n-id="password_ok">OK</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">File name:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">File size:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">Title:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">Author:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">Subject:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">Keywords:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">Creation Date:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">Modification Date:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">Creator:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">PDF Producer:</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">PDF Version:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">Page Count:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_size">Page Size:</span> <p id="pageSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_linearized">Fast Web View:</span> <p id="linearizedField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">Close</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="printServiceOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="print_progress_message">Preparing document for printing…</span>
+            </div>
+            <div class="row">
+              <progress value="0" max="100"></progress>
+              <span data-l10n-id="print_progress_percent" data-l10n-args="{ &quot;progress&quot;: 0 }" class="relative-progress">0%</span>
+            </div>
+            <div class="buttonRow">
+              <button id="printCancel" class="overlayButton"><span data-l10n-id="print_progress_close">Cancel</span></button>
+            </div>
+          </div>
+        </div>
+<div id="chromeFileAccessOverlay" class="container hidden">
+  <div class="dialog">
+    <div class="row">
+      <!-- The extension icon (PDF.js logo) will be shown at the left, to help
+           users with recognizing which checkbox they have to click when they
+           visit chrome://extensions.
+      -->
+      <p id="chrome-pdfjs-logo-bg" style="
+          display: block;
+          padding-left: 60px;
+          min-height: 48px;
+          background-size: 48px;
+          background-repeat: no-repeat;
+          font-size: 14px;
+          line-height: 1.8em;
+          word-break: break-all;">
+        Click on
+        "<span id="chrome-file-access-label">Allow access to file URLs</span>"
+        at
+        <a id="chrome-link-to-extensions-page">chrome://extensions</a>
+        <br>
+        to view <span id="chrome-url-of-local-file">this PDF file.</span>
+      </p>
+    </div>
+    <div class="row">
+      <p>
+        or select the file again:
+        <input type="file" id="chrome-file-fallback" accept=".pdf">
+      </p>
+    </div>
+  </div>
+</div>
+
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+  
+
+
+</body></html>
