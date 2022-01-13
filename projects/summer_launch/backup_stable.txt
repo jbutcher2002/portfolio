@@ -20,7 +20,7 @@ header {
   background-attachment: absolute;
   background-position: center;
   background-image: url("backBoat.jpg");
-  margin-bottom: 2.25rem !important;                      /* image margins*/
+  margin-bottom: 2.25rem !important;                      /* image margins        bottom paragraph source: A Trip to Venus by John Munro */
   margin-top: -1.25rem;
   flex-wrap: wrap;
   
