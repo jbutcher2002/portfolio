@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,122 +5,145 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
-  text-overflow: hidden:
   box-sizing: border-box;
-  line-spacing: 40px;
-  
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
-
-video {  
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-nav {
+html {
+  background: url(diamond_plate.png) repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: Poiret One;
-  margin-top: 17%;
-  font-size: 4vw;
-  text-decoration: none;
-  text-align: center;
-  text-overflow: hidden;
-  
 }
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+main.example {
+  margin: -10px;
+  padding: 30px;
 }
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  transition: 0.5s;
-  transition-delay: 0.2s;
-  background-color: transparent;
-  text-overflow: clip;
-  text-decoration: none;
-  font-size:50px;
-  font-weight: bold;
-  text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(72,72,72,30),
-               0 0 5px rgba(72,72,72,30),
-               0 1px 3px rgba(72,72,72,30),
-               0 3px 5px rgba(72,72,72,40),
-               0 5px 10px rgba(72,72,72,50),
-               0 10px 10px rgba(72,72,72,50),
-               0 20px 20px rgba(72,72,72,50);
-}
-
-
-
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  
-  
-
-}
-nav.example {
-  
-  padding: 20px;
-}
-
+                    /* big */
 @media screen and (min-width: 601px) {
-  nav.example {
-    font-size: 3.9vw;
-	  float: center;
-	  padding: 2px;
-	  
-  }
-}
-
-@media screen and (max-width: 700px) {
-  nav.example {
-    font-size: 6vh;
-	white-space: wrap; 
-    width: 100px; 
+  main.example {
     
+	padding: 40px;
+	font-size: 35px;
+	
+  }
+}
+                    /* little */
+@media screen and (max-width: 600px) {
+  main.example {
+    text-indent: 55px;
+    margin: 0px;
+    padding: 10px;
+	padding-left: 15px;
+	
+	
+    font-size: 25px;
+	
   }
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: -100px;
+  background-repeat: no-repeat;
+}
+* {
+  font-weight: bold;
+}
+h4 {
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px orange;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+p {
+  margin:0px;
+  padding-right: 29px;
+}
+#right {
+  float: right;
+
+}
+#left {float: left;}
+.wrapper {grid-template-columns: 300px 300px;}
+.wrapperTwo {grid-template-columns: 200px 200px 200px;}
+
+
+
+.small {
+  padding-top: 30px;
+  width: 30vw;
+  height: 30vw;
+}
+ul {
+  font-size: 3.5vw;
+  overflow-y: auto;
+  padding-top: 10px;
+}
 </style>
-</head>
-<body>
-
-<video autoplay muted loop id="myVideo">
-  <source src="globe.mp4" type="video/mp4">
-</video>
-
-<div class="content">
-  <nav class="example">
-    <a href="../index.html">  HOME</a>
-    <a href="summer_launch/home.html">SUMMER LAUNCH</a>
-    <a href="technical_docs/technical-docs.html">TECHNICAL DOCS<br></a>
-    <a href="https://replit.com/@jbutcher2002/JeffInvaders-3?v=1">JEFF INVADERS</a>
-  </nav>
+<header>
   
+</header>
+</head>
+<main class="example">
+<body>
+<img src="ridgid-logo-vector_transparent.png"></img>
+<div class="wrapper">
+  <h4 style="text-indent: -10px;">15 Guage 2-1/2''Angled Finish Nailer</h4>
 </div>
 
 
+    <p>RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer, delivering consistent and professional results with every trigger-pull. Packed with Clean Drive Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic tools, this is sure to be a staple in contractors toolboxes.</p>
 
-</body>
+<div></div>
+<h4 class="wrapper" id="left">Know Your Nailer</h4>
+<br></br> 
+
+<img src="ridgid-finishing-nailers-r250aff-d4_600.jpg" class="small" id="right"></img>
+
+	<p class="wrapperTwo">
+			<br>The safe use of this product requires an understanding of the information on the tool and in this operator’s manual as well as a knowledge of the project you are attempting. Before use  of  this  product,  familiarize  yourself  with  all  operating  features and safety rules.
+		  </p>
+            <h4><br>Product Overveiw</h4>  
+              <p>
+        RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer. This Angled Finish Nailer delivers consistent professional results with every trigger-pull. Packed with CLEAN DRIVE Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic Tools, this is sure to be a staple in contractor's toolboxes. Backed by the Industry Leading Lifetime Service Agreement, the 15-Gauge 2-1/2 in. Angled Finish Nailer includes sample nails, a bag, and an operator's manual.
+        </p>
+	  <h4>Product Specifacations</h4>
+	
+      
+	  <ul id="left">
+	    
+        <li>Product Height (in.): 	12.38</li>
+        <li>Product Width (in.): 	3.50</li>
+        <li>Max. Fastener Size: 	2-½ in.</li>
+	    
+        <li>Min. Fastener Size: 	1-¼ in.</li>
+        <li>Nail Guage: 	15</li>
+        <li>Nailgun Angle:   35 deg.</li>
+      </ul>
+	
+	
+	<img src="Ridgid-15-Guage-Angled-Finish-Nailer.jpg" class="small" id="right"><br><br></img>
+	
+	
+	
+</main>
+  <footer>
+
+</footer>
 </html>
