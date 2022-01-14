@@ -1,321 +1,132 @@
 <!DOCTYPE html>
 <html>
-<!-- -----------------------------------------------------------------------------------------
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
-                    █══Test to host custom fonts & images from github══█
------------------------------------------------------------------------------------------- -->
-<link href="https://raw.githubusercontent.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">  <!-- Put raw. before github link to rel style sheet ( not mine) -->
-<!-- ------------- This github repository ------------------------------------------------------- -->
-   
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-  margin-top: 30px;
-}
-
-.column img {
-  margin-top: 0;
-  vertical-align: middle;
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-/* Responsive layout - for medium size screens*/
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-    font-family: arial;
-  }
-}
-
-/* Responsive layout - for small size screens */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-	
-  }
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.containerh1 {
-  position: absolute;
-  top: 0%;
-  left: 27%;
-}
-.centered {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-h3 {
-  font-family: impact;
-  text-shadow: 2px 2px white;
-  font-size: 1.875rem;
-  
-}
-* {font-weight: bold;}
-html { 
-  
-  
-}
-html,
-body {
-  
-  
-  
-  position: relative;
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
-  font-family: 'impact', sans-serif; 
-  line-height: 1.5;
-  scroll-behavior: smooth;
-  
-  color: black;
-}
-h2{
-  font-family: 'rawline', sans-serif;
-  color: white;
-  text-shadow: 0px 0px 0 #ffffff, 1px 1px 0 #f2f2f2, 2px 2px 0 #f2f2f2, 3px 3px 0 #d9d9d9, 4px 4px 0 #cccccc, 5px 5px 0 #bfbfbf, 6px 6px 0 #b3b3b3, 7px 7px 0 #a6a6a6, 8px 8px 0 #999999, 9px 9px 0 #8c8c8c, 10px 10px 0 #808080, 11px 11px 0 #737373, 12px 12px 0 #666666, 13px 13px 0 #595959, 14px 14px 0 #4d4d4d, 15px 15px 0 #404040, 16px 16px 0 #333333, 17px 17px 0 #262626, 18px 18px 0 #1a1a1a, 19px 19px 0 #0d0d0d, 20px 20px 0 #000000, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2), 9px -40px 3px rgba(206,133,56,0);;
-  
-  font-size: 9vw;
-  text-align: center; !important
-  font-weight: bold;
-  margin: 	0;
-  margin-bottom: 80px;
-  margin-top: 10px;
-  letter-spacing: 3px;
-  
-  
-}
-#navbar {
-  color: black;
-  background-image: url("https://github.com/jbutcher2002/dev-landing-page/blob/master/Ridgid-15-Ga-Nailer-Article02-800x600croped.jpg?raw=true");
-  
-  
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 10px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
-}
-
-header {
-  text-decoration: underline;
-  color: black;
-  margin: 10px;
-  text-align: right;
-  font-size: 1.8em;
-  font-weight: bold;
-  font-family: 'rawline', sans-serif;
-  
-}
-
-#main-doc header {
-  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 0px;
   margin: 0px;
-  
-  text-color: white;
-}
-
-#navbar ul {
-  height: 88%;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  font-size: 1.125rem;
-  color: black;
-  font-size: 2.2vw;
-}
-
-#navbar li {
-  color: black;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
-  font-size: 1.125rem;
-  text-color: white;
-}
-
-
-
-#main-doc {
-  position: absolute;
-  margin-left: 0px;
-  padding: 20px;
-  margin-bottom: 110px;
-  
-  
-  
-}
-
-section article {
-  color: blue;
-  margin: 15px;
-  font-size: 0.96rem;
-  
-  font-family: 'rawline', sans-serif;
-  text-color: white;
-}
-
-section li {
-  margin: 15px 0px 0px 20px;
-  
-  text-color: white;
-}
-
-
-* {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-p {
-  font-size: 3vw;
-  color: black;
-  
-  font-family: 'rawline', sans-serif; /* Set costom font */
-  
-}
-header {
-  
-  color: orange;
-  text-decoration: underline;
-  font-weight: bold;
-  color: black;
-  
-  
-
-  
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px orange;
-  
-  text-color: white;
-}
-/* List all ttf, woff, svg, eot links from your github reposotory */
-@font-face {
-    font-family: 'rawline';
-    src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot');
-    src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff2') format('woff2'),
-         url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff') format('woff'),
-         url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.ttf') format('truetype'),
-         url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.svg') format('svg');
-/* Set weight and style */
-    font-weight: 500;
-    font-style: bold;
-	text-color: white;
-}
-h1 {
-  text-decoration: underline;
-  
-  text-color: white;
-} 
-.wrapper {
-  display: grid;
-  grid-template-columns: 300px 300px;
-}
-.wrapperTwo {grid-template-columns: 200px 200px 200px;}
-ul {
-  font-size: 1vw:
+  border: 0px;
 }
 html {
-  background: url(diamond_plate.png) no-repeat center center fixed; 
+  background: url(diamond_plate.png) repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+  font-family: Poiret One;
+}
+main.example {
+  margin: -10px;
+  padding: 30px;
+}
+                    /* big */
+@media screen and (min-width: 601px) {
+  main.example {
+    
+	padding: 40px;
+	font-size: 35px;
+	
+  }
+}
+                    /* little */
+@media screen and (max-width: 600px) {
+  main.example {
+    text-indent: 55px;
+    margin: 0px;
+    padding: 10px;
+	padding-left: 15px;
+	
+	
+    font-size: 25px;
+	
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: -100px;
+  background-repeat: no-repeat;
+}
+* {
+  font-weight: bold;
+}
+h4 {
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px orange;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+p {
+  margin:0px;
+  padding-right: 29px;
+}
+#right {
+  float: right;
+
+}
+#left {float: left;}
+.wrapper {grid-template-columns: 300px 300px;}
+.wrapperTwo {grid-template-columns: 200px 200px 200px;}
+
+
+
+.small {
+  padding-top: 30px;
+  width: 30vw;
+  height: 30vw;
+}
+ul {
+  font-size: 3.5vw;
+  overflow-y: auto;
+  padding-top: 10px;
 }
 </style>
-
-<main id="main-doc">
-    <img src="https://github.com/jbutcher2002/dev-landing-page/blob/master/ridgid-logo-vector_transparent.png?raw=true" style="width: 70%; margin-left: 155px; margin-bottom: -60px;">
-    <h2 id="home"><strong><span style="font-size: 5vw;text-shadow: none;"></span></strong></h2>
-    <header style="text-align: center;">15 Guage 2-1/2'' Angled Finish Nailer</header>
-    <article>
-	  
-      <p style=" text-indent: 75px;font-size: 3vw;">
-        RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer, delivering consistent and professional results with every trigger-pull. Packed with Clean Drive Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic tools, this is sure to be a staple in contractors toolboxes.
-	  
-      </p>
-	  
-	</article>
-	  <img src="https://images.thdstatic.com/productImages/948cbb90-a5ad-4ef9-8bef-9cd861364e90/svn/ridgid-finishing-nailers-r250aff-d4_600.jpg" alt="RIDGID Pneumatic 15-Gauge 2-1/2 in. Angled Finish Nailer with CLEAN DRIVE  Technology, Tool Bag, and Sample Nails-R250AFF - The Home Depot" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 274px; height: 274px; margin: 20px;margin-left: 30px;margin-bottom: 50px;">
-	  
-	  <img src="https://i.ytimg.com/vi/F2atctO-iCA/hqdefault.jpg" alt="How to register your Ridgid tools for Lifetime Service Agreement LSA online  - YouTube" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 288px; height: 216px; margin: 0px;float: right; margin-left: 50px; margin-top: 45px;">
-	  
-      <section class="main-section" id="know-your-nailer">
-      <header>Know Your Nailer</header>
-	  <article>
-      <p>
-        The safe use of this product requires an understanding of the information on the tool and in this operator’s manual as well as a knowledge of the project you are attempting. Before use  of  this  product,  familiarize  yourself  with  all  operating  features and safety rules.
-      </p>
-	  </article>
-      <ul style="font-family: rawline;" class="wrapper";>
-
-        <li>ACCU-DRIVE TIP DESIGN</li>
-        <li>ADJUSTABLE EXHAUST</li>
-        <li>ANGLED MAGAZINE</li>
-        <li>BELT HOOK</li>
-        <li>CONSTRUCTION RULER </li>
-        <li>DEPTH OF DRIVE ADJUSTMENT </li>
-        <li>DRY-FIRE LOCKOUT </li>
-        <li>IN-HANDLE AIR FILTER</li>
-        <li style="float: right;">INTERNAL PISTON CATCH </li>
-        <li style="float: right;">JAM-CLEARING MECHANISM</li>
-        <li style="float: right;">MUFFLER</li>
-        <li style="float: right;">NO-MAR PAD </li>
-        <li style="float: right;">OIL-FREE DESIGN </li>
-        <li style="float: right;">OVERMOLD GRIP AND TRIGGER</li>
-        <li style="float: right;">QUICK-CONNECT SWIVEL CONNECTOR </li>
-        <li style="float: right;">SELECTABLE TRIGGER </li>
-      </ul>
-    </article>
-  </section>
+<header>
   
-  <section class="main-section" id="product-overveiw">
-    <header>Product Overveiw</header>
-    <article>
-      <p>
+</header>
+</head>
+<main class="example">
+<body>
+<img src="ridgid-logo-vector_transparent.png"></img>
+<div class="wrapper">
+  <h4 style="text-indent: -10px;">15 Guage 2-1/2''Angled Finish Nailer</h4>
+</div>
+
+
+    <p>RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer, delivering consistent and professional results with every trigger-pull. Packed with Clean Drive Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic tools, this is sure to be a staple in contractors toolboxes.</p>
+
+<div></div>
+<h4 class="wrapper" id="left">Know Your Nailer</h4>
+<br></br> 
+
+<img src="ridgid-finishing-nailers-r250aff-d4_600.jpg" class="small" id="right"></img>
+
+	<p class="wrapperTwo">
+			<br>The safe use of this product requires an understanding of the information on the tool and in this operator’s manual as well as a knowledge of the project you are attempting. Before use  of  this  product,  familiarize  yourself  with  all  operating  features and safety rules.
+		  </p>
+            <h4><br>Product Overveiw</h4>  
+              <p>
         RIDGID introduces the 15-Gauge 2-1/2 in. Angled Finish Nailer. This Angled Finish Nailer delivers consistent professional results with every trigger-pull. Packed with CLEAN DRIVE Technology, this nailer delivers over 17X more consecutive perfect drives versus the competition. This results in less time fixing, and more time working. As part of the new lineup of RIDGID Pneumatic Tools, this is sure to be a staple in contractor's toolboxes. Backed by the Industry Leading Lifetime Service Agreement, the 15-Gauge 2-1/2 in. Angled Finish Nailer includes sample nails, a bag, and an operator's manual.
-      </p>
-    </article>
-  </section>
-  
-  <section class="main-section" id="What_you_should_already_know">
-    <header>Product Specifacations</header>
-    <article>
+        </p>
+	  <h4>Product Specifacations</h4>
+	
       
-      <img src="https://m.media-amazon.com/images/I/41OQ6aOlCUL._AC_.jpg?raw=true" style="width: auto; height: 250px;float: right;">
-      <ul style="font-family: rawline;color: black">
+	  <ul id="left">
 	    
         <li>Product Height (in.): 	12.38</li>
         <li>Product Width (in.): 	3.50</li>
@@ -325,89 +136,14 @@ html {
         <li>Nail Guage: 	15</li>
         <li>Nailgun Angle:   35 deg.</li>
       </ul>
-    </article>
 	
-  </section>
-  
-  <section class="main-section" id="clean-drive-system">
-    <header>Clean Drive System</header>
-    <article style="color: black;">
-      The major upgrade for this Ridgid 15-gauge nailer is Clean Drive. It’s a tighter, more precise drive track that greatly reduces the number of jams and misfires you get over time. Ridgid claims you’ll get up to 17x more perfect drives, including with toe nailing. Months after our first tests with the 18-gauge version, we’re still not having any jam issues.
-    </article>
-  </section>
-  <section class="main-section" id="jam-clearance">
-    <header>Jam Clearance</header>
-	<article>
 	
-    <p>No nailer is perfect and even the Ridgid 15-Gauge Angled Finish Nailer with Clean Drive eventually will. When that happens, the access door on top is easy to open by flipping the latch release forward.
-    </p>
-	</article>
-  </section>
-  <section class="main-section" id="magazine">
-    <header>Magazine</header>
-    <article>
-
-      <p>The magazine is a rear loading style that’s mainly plastic construction. The nail track on the inside is metal. A bypass pusher makes loading the nails easy, though it doesn’t slide as snappy as an all-metal magazine.
-The upside is that it helps keep the weight down some.
-      </p>
-    </article>
-  </section>
-  <img src="https://toolboxdivas.com/wp-content/uploads/2019/01/Ridgid-15-Guage-Angled-Finish-Nailer.jpg?raw=true" style="width: auto; height: 500px;float: right;">
-  <section class="main-section" id="depth-adjustment">
-    <header>Depth Adjustment</header>
-    <article style="color: black;">Thumbwheels depth adjustments are pretty standard. Ridgid place theirs on the right side of the nose. What sets it apart is that it’s super-smooth to adjust.
-    </article>
-  </section>
-  <section class="main-section" id="narrow-nose-design">
-    <header>Narrow Nose Design</header>
-    <article style="color: black;">The Ridgid R250AFF sticks with a narrow nose design that’s easier to see some of the competition. Ridgid says it has an aggressive toenailing tip. It’s narrow and rounded, so it’s not going to stick as well as the barbs on a framing nailer.
-    </article>
-  </section>
-  <section class="main-section" id="ergonomics">
-    <header>Ergonomics</header>
-    <article style="color: black;">At 4.2 pounds, Ridgid comes in on par with most of its competition. You can save a few ounces with Makita or gain a couple with Bostitch. Like most nailers in this class, there’s a forward lean, but nothing out of the ordinary with how it balances.
-    </article>
-	
-  </section>
-  <section class="main-section" id="performance">
-    <header style="text-align: center;">Performance</header>
-    <article style="color: black;">You’re not likely to bump fire at a crazy rate with a finish nailer, and I was able to consistently drive 2-1/2″ nails at roughly a 1/2-second interval without an issue. It’s possible to shoot faster than that, but it’s tough to get good results no matter what nailer you’re using.
-
-Moving to our test grid of poplar and PT pine, the Ridgid 15-Gauge Angled Finish Nailer sinks 2″ nails with ease. I’d have been shocked if that wasn’t the case, though.
-    </article>
-  </section>
-  
-  <section class="main-section" id="Reference">
-    <header></header>
-    <article>
-	
-	<img src="https://images.thdstatic.com/productImages/44812258-1099-4a78-8b4c-8f62bd833600/svn/ridgid-finishing-nailers-r692fbe-r250aff-31_600.jpg" alt="RIDGID Pneumatic 16-Gauge 2-1/2 in. Finish Nailer &amp;amp; 18-Gauge 2-1/8 in. Brad  Nailer w/ 15-Gauge 2-1/2 in. Angled Finish Nailer-R692FBE-R250AFF - The  Home Depot" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 260px; height: 200px; margin: 0px;">  
-	
-	<img class="wrapperTwo" src="https://images.thdstatic.com/productImages/abe5df96-f5d2-483d-9f5e-7cb66414ac0a/svn/ridgid-finishing-nailers-r250aff-e1_600.jpg" alt="" style="width: 220px; height: 200px; display: block; pointer-events: none;float: right">
-	
-
-	
-	<img class="wrapperTwo"src="https://m.media-amazon.com/images/I/61QLAmmU0YL._AC_SL1000_.jpg" alt="" style="display: block; width: 200px; height: auto; display: block; pointer-events: none;float: right">
-      <ul style="float: left;">
-        <li style="color: black;">
-        All the documentation in this page is taken from
-          <a
-            href="https://www.protoolreviews.com/ridgid-15-gauge-angled-finish-nailer-r250aff/"
-            target="_blank"
-            >&#9762;Pro Tool Reviews &#9762;</a
-          >
-        </li>
-      </ul>
-	  
+	<img src="Ridgid-15-Guage-Angled-Finish-Nailer.jpg" class="small" id="right"><br><br></img>
 	
 	
 	
-	
-	
-	
-
-    </article>
-	
-  </section>
 </main>
+  <footer>
+
+</footer>
 </html>
