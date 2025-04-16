@@ -1,0 +1,3 @@
+
+Explosion graphics and sound from: https://www.kenney.nl/assets
+Folder contains all sprite graphics (Mob, Player, etc.)
